@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	<title>signup</title>
+</head>
+
+<body>
+
+	<form action="/singup" method="POST">
+		<input type="text" name="full_name" placeholder="fullName">
+      <br>
+      <input type="text" name="username" placeholder="username">
+      <input type="text" name="password" placeholder="password">
+      <br>
+      <input type="text" name="bio" placeholder="Bio">
+      <br>
+      <input type="submit" value="Submit">
+  </form>
+  <font color="red">{{ errormsg }}</font>
+
+  </body>
+</html>

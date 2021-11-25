@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Users list</title>
+  </head>
+  <body>
+    <h2>Users List</h2>
+    <a href="/singup">Sing up here!</a>
+
+    {% if users %}
+      {% for user in users %}
+      Username : {{user.username}} <br>
+      Full Name: {{user.full_name}} <br>
+      Bio: {{user.bio}} <br><br><br>
+      {% endfor %}
+    {% else %}
+      There are no current users in the database. Make sure to create some!
+    {% endif %}
+
+    <a href="/art">see our page!</a>
+
+
+  </body>
+</html>
